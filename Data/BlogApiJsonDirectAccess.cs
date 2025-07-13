@@ -6,11 +6,11 @@ using System.Formats.Asn1;
 
 namespace Data;
 
-public class BlogApiJasonDirectAccess : IBlogApi
+public class BlogApiJsonDirectAccess : IBlogApi
 {
     BlogApiJsonDirectAccessSettings _settings;
 
-    public BlogApiJasonDirectAccess(IOptions<BlogApiJsonDirectAccessSettings> option)
+    public BlogApiJsonDirectAccess(IOptions<BlogApiJsonDirectAccessSettings> option)
     {
         _settings = option.Value;
         ManageDataPaths();

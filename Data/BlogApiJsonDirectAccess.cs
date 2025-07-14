@@ -25,7 +25,7 @@ public class BlogApiJsonDirectAccess : IBlogApi
         CreateDirectoryIfNotExists($@"{_settings.DataPath}\{_settings.CommentsFolder}");
     }
 
-    private void CreateDirectoryIfNotExists(string path)
+    private static void CreateDirectoryIfNotExists(string path)
     {
         if (!Directory.Exists(path))
         {
